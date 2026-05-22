@@ -1,0 +1,30 @@
+# Next.js
+.next/
+out/
+build/
+dist/
+
+# Dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# Env
+.env*.local
+.env
+.dev.vars
+
+# Cloudflare Workers / Wrangler
+.wrangler/
+.mf/
+
+# Misc
+.DS_Store
+*.pem
+.vercel
+.idea/
+.vscode/
+
+# D1 / R2 local fixtures
+.d1/
+.r2/
