@@ -1,8 +1,15 @@
 # market.clawie.dev
 
-Plugin marketplace for **Clawie**. Discovery, install, stats, reviews for community-published skills, drivers, model providers, channel adapters, connectors, validators, starter packs, eval fixtures.
+Planned plugin marketplace for **Clawie**. Discovery, install, stats, reviews for community-published skills, drivers, model providers, channel adapters, connectors, validators, starter packs, eval fixtures.
 
-## Architecture
+> **Status:** Pending. The repo currently contains only README + LICENSE — no
+> NextJS app, no Workers, no `listings/` tree, no D1 schema. The design below
+> is the contract this repo will implement when [spec 024](https://github.com/clawie-dev/specs/tree/main/speckit/024-plugin-marketplace)
+> enters delivery in a v1.x release. v1.0 of the framework ships the
+> intent + agent + team substrate plugins will hang off; the marketplace
+> itself is later.
+
+## Planned architecture
 
 Hybrid: **git is source-of-truth, Cloudflare D1 is the read-index, R2 holds artifacts.**
 
@@ -41,7 +48,7 @@ Listing live on market.clawie.dev
 - **D1** — SQLite-as-a-service for the read index + stats
 - **R2** — S3-compatible object storage for plugin artifacts
 
-## Listings (the git source of truth)
+## Planned listings layout (the git source of truth)
 
 ```
 listings/
@@ -61,9 +68,9 @@ listings/
 
 A new submission = a PR adding `listings/<type>/<name>/manifest.yaml`. CI runs signature + smoke + schema checks; merge triggers the build pipeline.
 
-## Status
+## Spec
 
-Bootstrap pending. See [`clawie-dev/specs/speckit/024-plugin-marketplace`](https://github.com/clawie-dev/specs/tree/main/speckit/024-plugin-marketplace) for the spec.
+[`clawie-dev/specs/speckit/024-plugin-marketplace`](https://github.com/clawie-dev/specs/tree/main/speckit/024-plugin-marketplace).
 
 ## License
 
