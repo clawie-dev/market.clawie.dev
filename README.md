@@ -75,3 +75,5 @@ A new submission = a PR adding `listings/<type>/<name>/manifest.yaml`. CI runs s
 ## License
 
 MIT — see [LICENSE](LICENSE).
+
+[![advertisement](https://ads.servead.net/i/f2cad63b-5f59-4024-a6e5-004c609682ad.svg)](https://ads.servead.net/c/f2cad63b-5f59-4024-a6e5-004c609682ad)
